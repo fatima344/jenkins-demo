@@ -15,7 +15,7 @@ pipeline {
 
         stage ('Testing') {
             steps {
-                bat 'python3 test.py'
+                bat 'pytest test.py'
             }
         }
 
