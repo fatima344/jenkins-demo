@@ -18,7 +18,7 @@ pipeline {
                 sh 'python3 test.py'
             }
         }
-
+        
         stage ('Deployment') {
             steps {
                 script {
