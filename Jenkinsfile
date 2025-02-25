@@ -9,7 +9,7 @@ pipeline {
 
         stage ('Building') {
             steps {
-                sh 'pip3 install -r req.txt'
+                bat 'pip3 install -r req.txt'
             }
         }
 
