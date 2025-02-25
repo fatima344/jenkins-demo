@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/samiullah6799/mlops-demo-jenkins.git']])
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/fatima344/jenkins-demo.git']])
             }
         }
 
@@ -18,7 +18,7 @@ pipeline {
                 sh 'python3 test.py'
             }
         }
-        
+
         stage ('Deployment') {
             steps {
                 script {
